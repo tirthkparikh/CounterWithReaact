@@ -11,15 +11,15 @@ class Classcounter extends Component {
 
    
     increaseCount = () =>{
-        this.setState({
-            count : this.state.count + this.props.dif
-        })
+        this.setState((currState) => {
+            return { count: currState.count + this.props.dif };
+          });
     }
         
     decreaseCount = () =>{
-        this.setState({
-            count : this.state.count - this.props.dif
-        })
+        this.setState((currState) => {
+            return { count: currState.count - this.props.dif };
+          });
     }
   
     render() {
