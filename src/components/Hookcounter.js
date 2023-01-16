@@ -10,6 +10,7 @@ function Hookcounter(props) {
       <div>{count}</div>
       <button onClick={()=>{updatecount(count+props.dif)}}>+{props.dif}</button>
       <button onClick={()=>{updatecount(count-props.dif)}}>-{props.dif}</button>
+      <button onClick={()=>{updatecount(count+5)}}>+5</button>
     </div>
   )
 }
